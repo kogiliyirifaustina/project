@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: rgb(228, 216, 194);
+        }
+        .navbar {
+            background-color: rgb(160, 218, 95);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgb(37, 32, 32) 5px 5px 10px;
+            position: sticky;
+            top: 0px;
+        }
+        .logo a img {
+            width: 20%;
+            margin: 20px;
+        }
+    
+        .nav ul {
+            display: flex;
+            list-style-type: none;
+            margin-right: 80px;
+            margin-top: 50px;
+        }
+    
+        .nav ul li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    
+        .nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 5px;
+            color: rgb(124, 38, 19);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    
+        .nav ul li a:hover {
+            background-color: rgb(124, 38, 19);
+            color: rgb(160, 218, 95);
+            font-size: 25px;
+            text-decoration: underline;
+            text-decoration-color: rgb(160, 218, 95);
+            transition: 2s ease;
+        }
+
+        .main {
+            position: relative;
+            color: rgb(124, 38, 19);
+            
+        }
+        .main #title{
+            text-align: center;
+            color: rgb(124, 38, 19);
+        }
+
+        .left{
+            width: 40%;
+            position: absolute;
+            left: 5%;
+            top: 70px;
+        }
+
+        .middle{
+            border-left: 2px solid rgb(124, 38, 19);
+            height: 1000px;
+            position: absolute;
+            left: 50%;
+            top: 70px;
+
+        }
+
+        .right {
+            width: 40%;
+            margin-right: 5%;
+            position: absolute;
+            right: 0;
+            top: 70px;
+        }
+
+        .boxes #box1 {
+            width: 500px;
+            height: 200px;
+            border: 2px solid rgb(124, 38, 19);
+            border-radius: 40px;
+        }
+
+        .boxes  img {
+            width: 499px;
+            height: 150px;
+            border-radius: 40px;
+            border: 2px solid rgb(124, 38, 19);
+            
+        }
+
+        .boxes #box2{
+            width: 500px;
+            height: 200px;
+            border: 2px solid rgb(124, 38, 19);
+            border-radius: 40px;
+        }
+
+        .boxes #box3{
+            width: 500px;
+            height: 200px;
+            border: 2px solid rgb(124, 38, 19);
+            border-radius: 40px;
+        }
+
+        #line {
+            border-left: 2px solid rgb(124, 38, 19);
+            height: 20px;
+        }
+
+        .down {
+            width: 400px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            top: 65%;
+        }
+
+        .down h2{
+            margin-top: 10%;
+        }
+
+        .footer{
+            background-color: rgb(124, 38, 19);
+            width: 100%;
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgb(37, 32, 32) 5px 5px 10px;
+            position: sticky;
+            bottom: 0px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+           <a href="index.html"><img src="images/TINAS LOGO.png" alt=""></a> 
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="benefits.html">BENEFITS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <h2 id="title">KNOW MORE ABOUT THE PRODUCTS FROM SAMTINS</h2>
+        <div class="left">
+            <h3>What is ORGANIC SPICES?</h3>
+            <p>Organic spices are seasonings used to  flavor food that are derived from plants.</p><br>
+
+            <h3>SPICES VS. HERBS</h3>
+            <p>Generally speaking, spices come from different parts of a
+                plant other than the leaves while herbs come from leaves of
+                a plant.  Herbs are considered as a subset within the larger 
+                category of spices. It is interesting to note that some plants
+                produce both a spice and an herb.An example of this would 
+                be Coriandrum sativum: the dried seed (coriander)is
+                considered a spice while the leaf is used as an herb</p>  <br>  
+                    
+            <div class="boxes">
+                <h3>MORE ABOUT THESE SPICES</h3> 
+                    <div id="box1">
+                        <img src="images/cinnamon.jpg" alt="">
+                        <div class="down">
+                           <div><h2>CINNAMON</h2></div>
+                            <div id="line"></div>
+                            <div>
+                                <a href="#">Learn more</a>
+                                <a href="#">Overview</a>
+                            </div>
+                        </div>
+                       
+                    </div><br>
+                    <div id="box2">
+                        <img src="images/black pepper.jpg" alt="">
+                    </div><br>
+                    <div id="box3">
+                        <img src="images/tumeric.jpg" alt="">
+                    </div><br>
+            </div>    
+
+        </div>
+
+        <div class="middle"></div>
+
+        <div class="right">
+            <h3>What is ORGANIC TOMBROWN?</h3>
+            <p>Samtins tombrown is made from natural organic ingredients such as Almighty soya beans( u will understand later why soyabean is almighty),
+                Wheat,
+                Rice, and many more.
+                All these ingredients makes it very nutritious.</p><br>
+
+            <h3>WHO CAN TAKE TOMBROWN?</h3> 
+            <p>It is a natural delicacy for every one. Therefore it is safe 
+                for both adults and babies unless you are alergic to the 
+                ingredients used in making it.
+                
+                It has an irresistible taste and aroma. 
+                It can be taken at anytime. From morning till evening.</p>  <br>
+
+                <div class="boxes">
+                    <h3>MAJOR INGREDIENTS</h3>
+                    <div id="box1">
+                        <img src="images/soya.jpg" alt="">
+                    </div><br>
+                    <div id="box2">
+                        <img src="images/wheat.jpg" alt="">
+                    </div><br>
+                    <div id="box3">
+                        <img src="images/rice.jpg" alt="">
+                    </div><br>
+            </div>    
+        </div>
+        
+    </div>
+    
+  <div class="footer">
+    <img src="images/TINAS LOGO.png" alt="">
+  </div>
+        
+</body>
+</html>
